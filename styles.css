@@ -1,0 +1,39 @@
+body {
+    background-color: #ffd55a;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    margin-top: 5%;
+    font-size: 80px;
+}
+
+label {
+    color: #15a72d;
+}
+
+input {
+    color: #2bb643;
+    background-color: #020136;
+    width: 1080px;
+    height: 90px;
+    font-size: 90px;
+    text-align: center;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

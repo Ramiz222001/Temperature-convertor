@@ -1,0 +1,47 @@
+<html>
+
+
+<link rel="stylesheet" href="styles.css">
+
+<script>
+    function ck(value) {
+        x = ((value - 32) / 1.8).toFixed(2);
+        y = ((value - 32) / 1.8 + 273.15).toFixed(2);
+        document.getElementById('celsius').value = x;
+        document.getElementById('kelvin').value = y;
+
+    }
+
+    function fk(value) {
+        x = ((value * 1.8) + 32).toFixed(2);
+        y = ((value * 1) + 273.15).toFixed(2);
+        document.getElementById('farhenheit').value = x;
+        document.getElementById('kelvin').value = y;
+    }
+
+    function fc(value) {
+        x = ((value - 273.15) * 1.8 + 32).toFixed(2);
+        y = (value - 273.15).toFixed(2);
+        document.getElementById('farhenheit').value = x;
+        document.getElementById('celsius').value = y;
+    }
+</script>
+
+
+<body>
+
+    <form>
+        <br>
+        <label for="tempconv">TEMPERATURE CONVERTOR</label><br><br>
+        <label for="farhenheit">Farhenheit</label><br>
+        <input type="number" id="farhenheit" name="farhenheit" onkeyup="ck(this.value);" placeholder="0"><br><br>
+
+        <label for="celsius">Celsius</label><br>
+        <input type="number" id="celsius" name="celsius" onkeyup="fk(this.value);" placeholder="0"><br><br>
+
+        <label for="kelvin">Kelvin</label><br>
+        <input type="number" id="kelvin" name="kelvin" onkeyup="fc(this.value);" placeholder="0"><br><br>
+    </form>
+</body>
+
+</html>
